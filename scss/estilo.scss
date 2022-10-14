@@ -1,0 +1,136 @@
+$azul: #1755a7;
+$blanco:  #ffffff;
+$claro:  #dfeaf8;
+
+@mixin sections (){
+    background-color: $claro ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    &__titulo{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 10px;
+        color: $azul;
+        font-weight: 600;
+    }  
+    
+}
+header{ 
+    .navbar{
+
+       img{
+            margin-left: 12px;
+            width: 140px;
+            }
+        }
+        h2{
+           padding-left: 20px;
+            font-size: 23px;
+            color: $blanco;
+        }
+        li{
+           padding-left: 15px; 
+
+            .barra{
+                color:$blanco;
+                 font-size: small;
+                 font-weight: 400;
+                 &:hover{
+                  font-weight: 650;
+                  color: $blanco;
+                }
+            }
+        }     
+        
+}
+   
+main{
+    h4{
+        color:$azul;
+    }
+    .foto img{
+        border: double #c4c0c0 2px;
+    }
+    .guia img{
+        width: 125px;
+        border-radius: 10px;
+        &:hover{
+           transform: scale(1.03,1.03);
+        }
+    }
+    .seccion1{
+        @include sections()
+
+    }
+    .seccion2{
+        @include sections()
+    }
+    .seccion3{
+        @include sections()
+    }
+    .seccion4{
+        @include sections()
+    }
+    .color2{
+        background-color:#c5d9f1;
+        
+    }
+    .lista{
+        color: #1755a7;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .parrafo{
+        font-weight: 600;
+        font-size: medium;
+    }
+    .linea{
+        margin-top: 30px;
+    }
+    .seccion6{
+        color:$azul;
+        font-weight: 500;
+        border: $azul solido 2px;
+    }
+    .cuadro{
+        background-color: $claro ;
+        margin-top: 30px;
+    }
+
+    .color1{
+        font-weight: 700;
+    }
+}    
+footer { 
+    .navbar{
+        img{
+            margin-left: 15px;
+            width: 140px;
+        }
+        .blanco{
+             width: 20px;
+             color: $blanco;
+             &:hover{
+                transform: scale(1.1,1.1);
+                 font-weight: 200;
+                 color: $blanco;
+            }
+        }      
+        a{
+         color: $blanco;
+         font-size:14px;
+         padding-left: 50px;
+         &:hover{
+             color: $blanco;
+             font-weight: 500;
+            }
+        }
+        h2{
+            padding-left: 60px;
+            font-size: 24px;
+            color: $blanco;
+        
+        }
+    }  
+}
